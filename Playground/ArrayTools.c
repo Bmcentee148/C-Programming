@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define M_LEN 5
+
 /* Reverses the contents of an array */
 void reverse_array(char s[], int len);
 
@@ -9,16 +11,16 @@ void get_len(char s[]);
 /* Prints the contents of an array */
 void print_array(char s[], int len);
 
-
 int main() {
-	char testchars[4];
+	char testchars[M_LEN];
 	testchars[0] = 'a';
 	testchars[1] = 'b';
 	testchars[2] = 'c';
 	testchars[3] = 'd';
-	print_array(testchars,4);
-	reverse_array(testchars,4);
-	print_array(testchars,4);
+	testchars[4] = 'e';
+	print_array(testchars,M_LEN);
+	reverse_array(testchars,M_LEN);
+	print_array(testchars,M_LEN);
 
 	return 0;
 }
