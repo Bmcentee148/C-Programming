@@ -47,7 +47,7 @@ bool propOverlaps(tPointi a, tPointi b, tPointi c, tPointi d) {
 		between the endpoints of the other line segment, creating an overlap */
 	if  (
 		sbetween(a,b,c) ||
-		sbetween(a,b,d)	||
+		sbetween(a,b,d) ||
 		sbetween(c,d,a) ||
 		sbetween(c,d,b)
 		)
